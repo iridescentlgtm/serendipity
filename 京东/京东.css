@@ -1,0 +1,328 @@
+
+<style>
+        @font-face {
+
+           font-family: 'icomoon';/*声明字体名称，可自行设置，应用的时候对应即可*/
+
+           src url('fonts/icomoon.eot?lep7lm');
+
+           src: url('fonts/icomoon.eot?lep7lm#iefix') format('embedded-opentype'),
+
+                url('fonts/icomoon.ttf?lep7lm') format('truetype'),
+
+                url('fonts/icomoon.woff?lep7lm') format('woff'),
+
+                url('fonts/icomoon.svg?lep7lm#icomoon') format('svg');
+
+           font-weight: normal;
+
+           font-style: normal;
+
+           font-display: block;
+
+       }
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .w {
+            margin: auto;
+        }
+
+        .top {
+            background-color: rgb(245, 245, 245);
+            width: 100%;
+            height: 35px;
+        }
+
+        .top1 {
+            float: left;
+        }
+
+        .top2 {
+            float: right;
+        }
+
+        .top ul li {
+            float: left;
+            height: 35px;
+        }
+
+        .top ul li a {
+            color: #6c6c6c;
+            font-size: 12px;
+            display: block;
+            line-height: 35px;
+            padding: 0 8px;
+        }
+
+        .top ul li span {
+            color: #6c6c6c;
+            font-size: 12px;
+            display: block;
+            line-height: 35px;
+            padding: 0 3px;
+        }
+
+        .top ul li span.cl-span {
+            color: #6c6c6c;
+            font-size: 12px;
+            display: inline-block;
+            line-height: 35px;
+            padding-left: 41px;
+        }
+
+        .top ul li span.cr-span {
+            color: #6c6c6c;
+            font-size: 12px;
+            display: inline-block;
+            line-height: 35px;
+        }
+
+        .top ul li span {
+            color: #6c6c6c;
+            font-size: 12px;
+            display: inline-block;
+            line-height: 35px;
+        }
+
+        .top li span.local {
+            display: inline-block;
+            background-size: 100%;
+            vertical-align: middle;
+        }
+
+        .top li span.slocal {
+            display: inline-block;
+            background-size: 100%;
+            vertical-align: middle;
+        }
+
+        .top li span.rlocal {
+            display: inline-block;
+            background-size: 100%;
+            vertical-align: middle;
+            padding-right: 41px;
+        }
+
+        .top a:hover {
+            color: rgb(255, 66, 0);
+            cursor: pointer;
+        }
+
+        .top span:hover {
+            color: rgb(255, 66, 0);
+            cursor: pointer;
+        }
+
+        .top span.cr-span:hover {
+            color: rgb(255, 66, 0);
+            cursor: pointer;
+        }
+
+        .toptwo {
+            background-color: rgb(255, 132, 182);
+            width: 100%;
+            height: 100px;
+            display: inline-block;
+        }
+
+        .toptwo1 {
+            display: block;
+            float: left;
+            padding-top: 6px;
+            padding-left: 35px;
+            height: 25px;
+        }
+
+        .toptwo2 {
+            float: left;
+            display: block;
+            padding-top: 6px;
+            padding-left: 6px;
+        }
+
+        .toptwo3 {
+            float: right;
+            display: block;
+            padding-top: 6px;
+            padding-right: 47px;
+        }
+
+        .sou {
+            width: 690px;
+            height: 100px;
+            cursor: pointer;
+            margin-top: 32px;
+        }
+
+        .sou div.souf a {
+            display: inline;
+            font-size: 14px;
+            color: rgb(255, 66, 0);
+
+            line-height: 10px;
+            border-top-left-radius: 6;
+            border-top-right-radius: 6;
+            padding-right: 5px;
+        }
+
+        .sou div.souf a:hover {
+            background-color: rgb(250, 223, 208);
+        }
+
+        .sou div.souf a:active {
+            background-color: rgb(255, 60, 0);
+            color: white;
+        }
+
+        .sou div.sous {
+            width: 650px;
+            height: 50px;
+        }
+
+        .sous input {
+            float: left;
+            width: 565px;
+            height: 38px;
+            border: 2px solid rgb(255, 60, 0);
+            border-right: 0;
+            border-top-left-radius: 30;
+            border-bottom-left-radius: 30;
+        }
+
+        .sous button {
+            background-color: rgb(255, 60, 0);
+            color: white;
+            height: 42px;
+            width: 65px;
+            border: 2px solid rgb(255, 60, 0);
+            border-left: 0;
+            border-top-right-radius: 30;
+            border-bottom-right-radius: 30;
+            cursor: pointer;
+        }
+
+        .sou div.soux a {
+            display: inline;
+            font-size: 12px;
+            padding-left: 5px;
+            color: #999;
+        }
+
+        .sou div.soux a:hover {
+            color: rgb(255, 60, 0)
+        }
+
+        .mai {
+            width: 1206px;
+            background-color: rgb(244, 244, 244);
+        }
+
+        .mai div.mai1 {
+            height: 32px;
+            background-image: -o-linear-gradient(left, #ff9000 0, #ff5000 100%);
+            background-image: linear-gradient(to right, rgb(255, 144, 0) 0px, rgb(255, 80, 0) 100%)
+        }
+
+
+        .mai div.mai1 ul li a {
+            float: left;
+            display: inline;
+            padding-left: 15px;
+            height: 32px;
+            color: white;
+            line-height: 32px;
+            text-align: center;
+        }
+
+        .mai div.mai1 ul li em {
+            float: left;
+            display: inline;
+            padding-left: 20px;
+            height: 32px;
+            color: white;
+            line-height: 32px;
+            text-align: center;
+        }
+
+        .mai div.mai1 ul li span {
+            float: left;
+            background-color: rgb(255, 80, 0) !important;
+            width: 200px;
+            height: 32px;
+            color: white;
+            line-height: 32px;
+            text-align: center;
+        }
+
+        .mai div.mai2 {
+            float: left;
+            width: 196px;
+            height: 498px;
+            border: 2px solid rgb(255, 80, 0);
+        }
+
+        .mai div.mai2 ul li {
+            font-size: 13px;
+            height: 32px;
+            line-height: 32px;
+            padding-left: 15px;
+            color: #999;
+        }
+
+        .mai div.mai2 ul li a {
+            padding-left: 4px;
+            padding-right: 4px;
+            color: #999;
+        }
+
+        .mai div.mai2 ul li:hover {
+            color: rgb(255, 80, 0);
+            background-color: rgb(250, 223, 208);
+        }
+
+        .mai div.mai2 ul li a:hover {
+            color: rgb(255, 80, 0);
+            border-bottom: rgb(255, 80, 0) 1px solid;
+        }
+
+        .end {
+            display: inline-block;
+            background-color: rgb(244, 244, 244);
+            text-align: center;
+            width: 100%;
+            font-size: 20px;
+            color: rgb(204, 204, 208);
+            font-weight: 150;
+        }
+
+        .eend {
+            background-color: rgb(244, 244, 244);
+            width: 100%;
+            height: 200px;
+        }
+
+        .eend ul li {
+            display: inline-block;
+            line-height: 23px;
+            padding: 0 6px;
+            color: #999;
+        }
+
+        .eend div.eend1 {
+            float: left;
+            margin-left: 65px;
+            font-size: 12px;
+            width: 240px;
+            padding-top: 45px;
+        }
+
+        .eend div.eend1 ul li:hover {
+            color: rgb(255, 66, 0);
+            cursor: pointer;
+        }
+    </style>

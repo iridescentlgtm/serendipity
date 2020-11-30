@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东</title>
+    <style>
+        @font-face {
+
+            font-family: 'icomoon';
+            /*声明字体名称，可自行设置，应用的时候对应即可*/
+
+            src: url('fonts/icomoon.eot?lep7lm');
+
+            src: url('fonts/icomoon.eot?lep7lm#iefix') format('embedded-opentype'),
+
+                url('fonts/icomoon.ttf?lep7lm') format('truetype'),
+
+                url('fonts/icomoon.woff?lep7lm') format('woff'),
+
+                url('fonts/icomoon.svg?lep7lm#icomoon') format('svg');
+
+            font-weight: normal;
+
+            font-style: normal;
+
+            font-display: block;
+
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .w {
+            margin: auto;
+        }
+
+        .top {
+            background-color: rgb(227, 228, 229);
+            width: 100%;
+            height: 32px;
+        }
+
+        .top1 {
+            float: left;
+            margin-left: 145px;
+        }
+
+        .top2 {
+            float: right;
+            margin-right: 145px;
+        }
+
+        .top ul li {
+            float: left;
+            height: 32px;
+        }
+
+        .top ul li a {
+            color: rgb(160, 167, 167);
+            font-size: 12px;
+            display: block;
+            line-height: 32px;
+            padding: 0 3px;
+        }
+
+        .top ul li span {
+            color: rgb(160, 167, 167);
+            font-size: 12px;
+            display: block;
+            line-height: 32px;
+            padding: 0 3px;
+        }
+
+        .top ul li span.cl-span {
+            color: rgb(160, 167, 167);  
+            font-size: 12px;
+            display: inline-block;
+            line-height: 32px;
+            padding-left: 0px;
+        }
+
+        .top ul li span.cr-span {
+            color: rgb(241, 2, 21);
+            font-size: 12px;
+            display: inline-block;
+            line-height: 32px;
+            padding-left: 0px;
+        }
+
+        .top ul li span {
+            color: rgb(160, 167, 167);
+            font-size: 12px;
+            display: inline-block;
+            line-height: 32px;
+        }
+
+        .top li span.local {
+            font-family: 'icomoon';
+            color: rgb(241, 2, 21);
+            font-size: 15px;
+        }
+
+        .top li span.local1 {
+            padding: 10px 6px 0px 6px;
+            margin-left: 6px;
+            border-left: 1px solid rgb(160, 167, 167);
+        }
+
+
+        .top a:hover {
+            color: rgb(241, 2, 21);
+            cursor: pointer;
+        }
+
+        .top span:hover {
+            color: rgb(241, 2, 21);
+            cursor: pointer;
+        }
+
+
+        .sou {
+            width: 100%;
+            height: 120px;
+            cursor: pointer;
+            margin-top: 25px;
+            display: inline-block;
+        }
+
+        .sou div.sou1 {
+            float: left;
+            padding-left: 190px;
+        }
+
+        .sou div.sou1 span {
+            display: inline-block;
+            width: 100px;
+            height: 130px;
+            background: url(./left.jpg) no-repeat 2px -15px;
+        }
+
+        .sou div.sous {
+            padding-right: 425px;
+            display: inline-block;
+            position: relative;
+            width: 484px;
+            height: 32px;
+        }
+
+        .sous input {
+            float: left;
+            width: 425px;
+            height: 32px;
+            border: 2px solid rgb(241, 2, 21);
+            border-right: 0;
+        }
+
+        .sous em {
+            position: absolute;
+            top: 7px;
+            right: 500px;
+        }
+
+        .sous button {
+            background-color: rgb(241, 2, 21);
+            height: 36px;
+            width: 57px;
+            border: 2px solid rgb(241, 2, 21);
+            border-left: 0;
+            cursor: pointer;
+            font-family: 'icomoon';
+            color: white;
+            font-size: 14px;
+        }
+
+        .sou div.soux {
+            margin-top: 12px;
+            padding-right: 30px;
+        }
+
+        .sou div.soux a {
+            display: inline;
+            font-size: 12px;
+            padding-left: 5px;
+            color: #999;
+        }
+
+        .sou div.mai1 {
+            height: 32px;
+            padding-top: 25px;
+            padding-right: 200px;
+        }
+
+
+        .sou div.mai1 ul li a {
+            float: left;
+            display: inline;
+            font-size: 15px;
+            padding-right: 23px;
+            height: 32px;
+            color: black;
+            line-height: 32px;
+            text-align: center;
+        }
+
+        .sou div.soux a:hover {
+            color: rgb(241, 2, 21)
+        }
+
+        .sou div.mai1 a:hover {
+            color: rgb(241, 2, 21)
+        }
+
+        .mai {
+            background-color: rgb(244, 244, 244);
+            width: 100%;
+            height: 490px;
+        }
+
+        .mai div.mai2 {
+            float: left;
+            width: 190px;
+            height: 460px;
+            background-color: white;
+            margin-top: 8px;
+            margin-left: 135px;
+        }
+
+        .mai div.mai2 ul li {
+            font-size: 13px;
+            height: 25px;
+            line-height: 25px;
+            padding-left: 15px;
+            color: black;
+        }
+
+        .mai div.mai2 ul li a {
+            padding-left: 4px;
+            padding-right: 4px;
+            color: black;
+        }
+
+        .mai div.mai2 ul li:hover {
+            background-color: rgb(217, 217, 217);
+        }
+
+        .mai div.mai2 ul li a:hover {
+            color: rgb(241, 2, 21);
+
+        }
+
+        #container {
+            float: left;
+            width: 590px;
+            height: 420px;
+            position: relative;
+        }
+
+        #container>#imgs {
+            position: absolute;
+        }
+
+        #container>#imgs>li {
+            list-style: none;
+            float: left;
+            display: none;
+        }
+
+        #container>#imgs>li.active {
+            display: block;
+        }
+
+        #container>#circles {
+            width: 0px;
+            height: 18px;
+            position: absolute;
+            left: 46px;
+            bottom: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #container>#circles>li {
+            list-style: none;
+            width: 0px;
+            height: 14px;
+            border-radius: 50%;
+            background: #fff;
+        }
+
+        #container>#circles>li.active {
+            background: red;
+        }
+
+        #container>div.arrow {
+            width: 24px;
+            height: 40px;
+            position: absolute;
+            margin-top: -20px;
+            background: rgba(0, 0, 0, .2);
+            font-size: 20px;
+            color: #fff;
+            line-height: 40px;
+            text-align: center;
+            user-select: none;
+            cursor: pointer;
+        }
+
+        #container>div.arrow:hover {
+            background: rgba(0, 0, 0, .5);
+        }
+
+        #container>div#left {
+            top: 50%;
+            left: 0;
+        }
+
+        #container>div#right {
+            top: 50%;
+            right: 0;
+        }
+
+        .end {
+            display: inline-block;
+            background-color: rgb(244, 244, 244);
+            text-align: center;
+            width: 100%;
+            font-size: 20px;
+            color: rgb(204, 204, 208);
+            font-weight: 150;
+        }
+
+        .eend {
+            background-color: rgb(244, 244, 244);
+            width: 100%;
+            height: 200px;
+        }
+
+        .eend ul li {
+            line-height: 23px;
+            padding: 0 6px;
+            color: rgb(102, 102, 102);
+        }
+
+        .eend div.eend1 {
+            float: left;
+            margin-left: 40px;
+            font-size: 12px;
+            width: 200px;
+            padding-top: 45px;
+        }
+
+        .eend div.eend1 ul li:hover {
+            color: rgb(255, 66, 0);
+            cursor: pointer;
+        }
+
+        #box {
+            float: right;
+            width: 200px;
+            height: 300px;
+            margin-top: 60px;
+            margin-right: 130px;
+            background: red;
+            position: relative;
+        }
+
+        .txt {
+            width: 150px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            color: #fff;
+            font-size: 30px;
+            font-weight: 900;
+            position: absolute;
+            left: 25px;
+            top: 50px;
+
+        }
+
+        .hour {
+            left: 20px;
+        }
+
+        .h_m {
+            left: 68px;
+        }
+
+        .minute {
+            left: 80px;
+        }
+
+        .m_s {
+            right: 68px;
+        }
+
+        .second {
+            left: 140px;
+
+        }
+
+        .hour,
+        .minute,
+        .second {
+            position: absolute;
+            top: 200px;
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+            line-height: 40px;
+            width: 40px;
+            height: 40px;
+            background: black;
+        }
+
+        .h_m,
+        .m_s {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 900;
+            position: absolute;
+            bottom: 70px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="w top">
+        <ul class="top1">
+            <li><span class="local"></span>
+                <span class="cl-span"><a href="#">山西</a></span></li>
+        </ul>
+        <ul class="top2 ">
+            <li><span>你好，请登录</span>
+                <span><a href="注册.html" style="color:rgb(241, 2, 21)">免费注册</a></span>
+                <span class="local1"></span></li>
+            <li><span>我的订单</span>
+                <span class="local1"></span></li>
+            <li><span>我的京东</span>
+                <span class="local1"></span></li>
+            <li><span><a href="#">京东会员</a></span>
+                <span class="local1"></span></li>
+            <li><span class="cr-span">企业采购</span>
+                <span class="local1"></span></li>
+            <li><span>客服服务</span>
+                <span class="local1"></span></li>
+            <li><span>网站导航</span>
+                <span class="local1"></li>
+            <li><span>手机京东</span></li>
+        </ul>
+    </div>
+    <div class="w sou">
+        <div class="sou1">
+            <span></span>
+        </div>
+        <div style="float: right;">
+            <div class="sous">
+                <input type="text" placeholder="    海尔冰箱" style="color: rgb(160, 167, 167)">
+                <em><img src="take.png"></em>
+                <button></button>
+            </div>
+            <div class="soux">
+                <a href="#" style="color:rgb(241, 2, 21)">家电超级五</a>
+                <a href="#">食品饮料</a>
+                <a href="#">大牌投影</a>
+                <a href="#">家电5折</a>
+                <a href="#">满99减10</a>
+                <a href="#">299减80</a>
+                <a href="#">24期免息</a>
+            </div>
+            <div class="mai1">
+                <ul>
+                    <li><a href="#" style="color: rgb(241, 2, 21); font-weight: 700;">秒杀</a></li>
+                    <li><a href="#" style="color: rgb(241, 2, 21); font-weight: 700;">优惠券</a></li>
+                    <li><a href="#">PLUS会员</a></li>
+                    <li><a href="#">品牌闪购</a></li>
+                    <li><a href="#">拍卖</a></li>
+                    <li><a href="#">京东家电</a></li>
+                    <li><a href="#">京东超市</a></li>
+                    <li><a href="#">京东生鲜</a></li>
+                    <li><a href="#">京东国际</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="w mai">
+        <div class="mai2">
+            <ul>
+                <li style="padding-top: 8px;"><a href="#">家用电器</a>
+                </li>
+                <li><a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a>
+                </li>
+                <li><a href="#">电脑</a>/<a href="#">办公</a>
+                </li>
+                <li><a href="#">家居</a>/<a href="#">家具</a>/<a hreh="#">家装</a>/<a hreh="#">厨具</a></li>
+                <li><a href="#">男装</a>/<a href="#">女装</a>/<a href="#">童装</a>/<a href="#">内衣</a></li>
+                <li><a href="#">美妆</a>/<a href="#">个护清洁</a>/<a href="#">宠物</a></li>
+                <li><a href="#">女鞋</a>/<a href="#">箱包</a>/<a href="#">钟表</a>/<a href="#">珠宝</a></li>
+                <li><a href="#">男鞋</a>/<a href="#">运动</a>/<a href="#">户外</a></li>
+                <li><a href="#">房产</a>/<a href="#">汽车</a>/<a href="#">汽车用品</a></li>
+                <li><a href="#">母婴</a>/<a href="#">玩具乐器</a></li>
+                <li><a href="#">食品</a>/<a href="#">酒类</a>/<a href="#">生鲜</a>/<a href="#">特产</a></li>
+                <li><a href="#">艺术</a>/<a href="#">礼品鲜花</a>/<a href="#">农资绿植</a></li>
+                <li><a href="#">医保保健</a>/<a href="#">计生情趣</a></li>
+                <li><a href="#">图书</a>/<a href="#">文娱</a>/<a href="#">教育</a>/<a href="#">电子书</a></li>
+                <li><a href="#">机票</a>/<a href="#">酒店</a>/<a href="#">旅游</a>/<a href="#">生活</a></li>
+                <li><a href="#">理财</a>/<a href="#">众筹</a>/<a href="#">白条</a>/<a href="#">保险</a></li>
+                <li><a href="#">安装</a>/<a href="#">维修</a>/<a href="#">清洗</a>/<a href="#">二手</a></li>
+                <li><a href="#">工业品</a></li>
+            </ul>
+        </div>
+        <div id="container">
+            　　　　　　
+            <!--定义图片列表-->
+            　　　　　　<ul id="imgs">
+                　　　　　　　　<li class="active"><img src="./a.jpg" alt=""></li>
+                　　　　　　　　<li><img src="./b.jpg" alt=""></li>
+                　　　　　　　　<li><img src="./c.jpg" alt=""></li>
+                　　　　　　　　<li><img src="./d.jpg" alt=""></li>
+                　　　　　　</ul>
+            　　　　　　
+            <!--定义圆点列表-->
+            　　　　　　<ul id="circles">
+                　　　　　　　　<li class="active"></li>
+                　　　　　　　　<li></li>
+                　　　　　　　　<li></li>
+                　　　　　　　　<li></li>
+                　　　　　　　　<li></li>
+                　　　　　　　　<li></li>
+                　　　　　　　　<li></li>
+                　　　　　　　　<li></li>
+                　　　　　　</ul>
+            　　　　　　
+            <!--左右箭头-->
+            　　　　　　<div id="left" class="arrow">
+                &lt</div>
+            　　　　　　<div id="right" class="arrow">></div>
+            　　　　
+        </div>
+        <div id="box">
+            <div class="txt">秒杀倒计时</div>
+            <div class="hour"></div>
+            <!-- 小时与分钟之间的冒号 -->
+            <span class="h_m">:</span>
+            <div class="minute"></div>
+            <!-- 分钟与秒之间的冒号 -->
+            <span class="m_s">:</span>
+            <div class="second"></div>
+        </div>
+    </div>
+    <div class="w end"><span>————</span>
+        <span class="ends">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;END</span>
+        <span class="ends">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;————</span></div>
+    <div class="w eend">
+        <div class="eend1">
+            <div>
+                <ul>
+                    <li style="font-size: 16px; padding: 12px; color: rgb(102, 102, 102);"><strong>购物指南</strong>
+                    </li>
+                </ul>
+            </div>
+            <ul>
+                <li>保障范围</li>
+                <li>退货退款流程</li>
+                <li>服务中心</li>
+                <li>更多特色服务</li>
+            </ul>
+        </div>
+        <div class="eend1">
+            <div>
+                <ul>
+                    <li style="font-size: 16px; padding: 12px; color: rgb(102, 102, 102);"><strong>配送方式</strong>
+                    </li>
+                </ul>
+            </div>
+            <ul>
+                <li>新手专区</li>
+                <li>消费警示</li>
+                <li>交易安全</li>
+                <li>24小时在线帮助</li>
+                <li>免费开店</li>
+            </ul>
+        </div>
+        <div class="eend1">
+            <div>
+                <ul>
+                    <li style="font-size: 16px; padding: 12px; color:  rgb(102, 102, 102);"><strong>支付方式</strong>
+                    </li>
+                </ul>
+            </div>
+            <ul>
+                <li>快捷支付</li>
+                <li>信用卡</li>
+                <li>余额宝</li>
+                <li>蚂蚁花呗</li>
+                <li>货到付款</li>
+            </ul>
+        </div>
+        <div class="eend1">
+            <div>
+                <ul>
+                    <li style="font-size: 16px; padding: 12px; color: rgb(102, 102, 102);"><strong>售后服务</strong>
+                    </li>
+                </ul>
+            </div>
+            <ul>
+                <li>手机淘宝</li>
+                <li>旺旺/旺信</li>
+                <li>大众评审</li>
+            </ul>
+        </div>
+        <div class="eend1">
+            <div>
+                <ul>
+                    <li style="font-size: 16px; padding: 12px; color: rgb(102, 102, 102);"><strong>特色服务</strong>
+                    </li>
+                </ul>
+            </div>
+            <ul>
+                <li>手机淘宝</li>
+                <li>旺旺/旺信</li>
+                <li>大众评审</li>
+            </ul>
+        </div>
+        
+    </div>
+
+
+    　　　　
+    <script>
+
+        //获取元素
+        var container = document.getElementById('container');
+        var lis = container.children[0].children;
+        var circles = container.children[1].children;
+        var left = document.getElementById('left');
+        var right = document.getElementById('right');
+        var len = lis.length;
+        //index表示当前所显示图片的下标
+        var index = 0;
+        var run;
+        //将图片轮播封装为一个函数
+        function turn() {
+            run = setInterval(function () {
+                lis[index].removeAttribute('class');
+                circles[index].removeAttribute('class');
+                index++;
+                if (index == len) {
+                    index = 0;
+                }
+                lis[index].setAttribute('class', 'active');
+                circles[index].setAttribute('class', 'active');
+            }, 2000);
+        }
+        //启动时，调用函数
+        turn();
+        //设置鼠标移入移出容器事件
+        container.onmouseenter = function () {
+            //当鼠标移入容器中，停止轮播
+            clearInterval(run);
+        }
+        container.onmouseleave = function () {
+            //当鼠标移出容器时，继续开始轮播
+            turn();
+        }
+        //设置鼠标移动到圆点上的悬浮事件
+        for (var i = 0; i < len; i++) {
+            circles[i].onmouseover = (function (i) {
+                return function () {
+                    lis[index].removeAttribute('class');
+                    circles[index].removeAttribute('class');
+                    index = i;
+                    lis[i].setAttribute('class', 'active');
+                    circles[i].setAttribute('class', 'active');
+                }
+
+            })(i);
+        }
+        //设置左箭头单击事件
+        left.onclick = function () {
+            lis[index].removeAttribute('class');
+            circles[index].removeAttribute('class');
+            index--;
+            if (index < 0) {
+                index = len - 1;
+            }
+            lis[index].setAttribute('class', 'active');
+            circles[index].setAttribute('class', 'active');
+        }
+        //设置右箭头单击事件
+        right.onclick = function () {
+            lis[index].removeAttribute('class');
+            circles[index].removeAttribute('class');
+            index++;
+            if (index == len) {
+                index = 0;
+            }
+            lis[index].setAttribute('class', 'active');
+            circles[index].setAttribute('class', 'active');
+        }
+        //1、获取元素
+        var hour = document.querySelector(".hour");
+        var minute = document.querySelector(".minute");
+        var second = document.querySelector(".second");
+        var inputTime = +new Date("2020-12-2 20:00:00");//倒计时的结束时间，自己设置时间
+        countDown();//先调用一次这个函数 防止第一次刷新页面有空白
+        //2、开启定时器
+        setInterval(countDown, 1000);//1000毫秒，每一秒钟调用一次函数
+        //3、倒计时-时分秒函数
+        function countDown() {
+            var nowTime = +new Date(); //返回的是当前时间的总的毫秒数
+            var times = (inputTime - nowTime) / 1000; // times是剩余时间的总的毫秒数
+            var h = parseInt(times / 60 / 60 % 24);
+            h = h < 10 ? "0" + h : h;//判断数值小于10的情况 如 0-9改为 00-09
+            hour.innerHTML = h;//更改div里面的内容 把h给获取元素hour的内容
+            var m = parseInt(times / 60 % 60);
+            m = m < 10 ? "0" + m : m;
+            minute.innerHTML = m;//同上
+            var s = parseInt(times % 60);
+            s = s < 10 ? "0" + s : s;
+            second.innerHTML = s;//同上
+        }
+    </script>
+
+</body>
+
+</html>
